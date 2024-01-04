@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hindi Arithmetic Parser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hindi Arithmetic Parser</h1>
+    <p>This is a parser built in JavaScript that can parse arithmetic operations written in Hindi language, which is an Indian language. It follows the BODMAS (Bracket, Order, Division and Multiplication, Addition, Subtraction) rule to evaluate expressions. The parser can handle input strings that include Hindi words for division, multiplication, addition, and subtraction operations, as well as decimals, brackets, and whitespace. Notably, this parser does not use any built-in parsing mechanisms such as the `eval()` method.</p>
+    <div class="link">
+        <a href="https://github.com/yourusername/hindi-arithmetic-parser"><b>Click here for usage instructions</b></a>
+    </div>
+    <hr>
+    <label for="input-expression" class="input-label">Enter the expression in Hindi:</label>
+    <input type="text" id="input-expression" class="input-field" placeholder="e.g. 10 जोड़ 2 गुना 3 बांट 4 भाग 2">
+    <button id="parse-btn" class="btn">Parse</button>
+    <label for="output-result" class="output-label">Result:</label>
+    <input type="text" id="output-result" class="output-field" readonly>
+    <p>Examples:</p>
+    <ul>
+      <li>10 जोड़ 2 गुना 3 बांट 4 भाग 2</li>
+      <li>10.5 जोड़ 2 गुना (3 बांट 4) भाग 2.5</li>
+      <li>10.5जोड़2गुना(3बांट4)भाग2.5</li>
+      <li>16 बांट 8 जोड़ 14 भाग 2</li>
+      <li>16 बांट (8 जोड़ 14) भाग 2</li>
+      <li>16.5जोड़2.5गुना(3बांट4)भाग2.5</li>
+      <li>1जोड़2जोड़3</li>
+    </ul>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
